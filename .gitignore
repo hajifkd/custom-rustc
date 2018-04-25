@@ -1,3 +1,5 @@
 /target/
 **/*.rs.bk
 test_source
+test_source.exe
+test_source.pdb

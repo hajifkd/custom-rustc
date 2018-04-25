@@ -1,2 +1,3 @@
 root=`rustc --print sysroot`
-cargo run -- -L ${root}/lib/rustlib/x86_64-unknown-linux-gnu/lib/ $1
+target=`rustup target list|grep default | awk '{print $1}'`
+cargo run -- -L "${root}/lib/rustlib/${target}/lib/" $1
